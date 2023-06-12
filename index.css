@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+.main {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    background-color: #F7F7F9;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto;
+    /* transform: translate(-50%, -50%); */
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2px;
+}
+#work, #description, #time, #del_all {
+    margin: 2px;
+}
+table, th, td {
+    margin: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    background-color: #decef6;
+}
+.done, .del, .edit {
+    /* display: none; */
+    /* border: 0.2px solid black;
+    border-collapse: collapse; */
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    margin: 1px;
+}
+
+textarea {
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}

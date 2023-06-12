@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <script src="my_script.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div style="background-color: #202131; padding: 5px; text-align: center;">
+            <h1 style="color: antiquewhite;">Нийт ажлын жагсаалт</h1>
+        </div>
+        <div class="data" style="text-align: center; margin-top: 5px; padding: 2px;">
+            <!-- <input type="text" id="work" placeholder="Ажил" /> -->
+            <textarea name="work" id="work" cols="40" rows="3" placeholder="Хийх ажлаа бичнэ үү"></textarea>
+            <br />
+            <textarea name="description" id="description" cols="40" rows="3" placeholder="Ажлын тайлбарыг оруулна уу"></textarea>
+            <br />
+            <textarea name="time" id="time" cols="40" rows="2" placeholder=" Дуусах огноог оруулна уу /он.сар.өдөр/"></textarea>
+            <br />
+            <button type="button" onclick="add()">Нэмэх</button>
+            <br/>
+            <p id="count_row">Нийт ажлын тоо = 0</p>
+            <p id="count_check">Хийсэн ажлын тоо = 0</p>
+            <button type="button" id="del_all" style="display: none;" onclick="del_all()">Жагсаалтыг <br/> цэвэрлэх</button>
+            <button type="button" id="del_check" style="display: none; margin-right: 5px;" onclick="del_check()">Хийсэн ажлуудыг<br/> жагсаалтаас хасах</button>
+        </div>
+        <br/>
+        <div class="list" style="text-align: center;">
+           <table id="my_table" style="text-align: center;">
+            <tr>
+                <th>№</th>
+                <th>Ажил</th>
+                <th>Тайлбар</th>
+                <th>Дуусах огноо</th>
+                <th>Тэмдэглэгээ</th>
+            </tr>
+           </table>
+        </div>
+        <br/>
+        <div>
+            <p style="text-align: center;">Улаанбаатар 2023</p>
+        </div>
+    </div>
+</body>
+</html>
